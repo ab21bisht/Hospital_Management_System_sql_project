@@ -1,8 +1,8 @@
-# Hospital_Management_System_sql_project
+# Hospital Management System Sql Project
 
 ![](https://github.com/ab21bisht/Hospital_Management_System_sql_project/blob/main/img%202.jpg)
 
-## Business Problems and Solutions
+### Data Analysis & Findings
 
 ### 1. Write a query to count the number of appointments for each status (e.g., Scheduled, Completed, No-show, Cancelled).
 ```sql
