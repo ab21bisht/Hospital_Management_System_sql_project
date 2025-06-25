@@ -1,4 +1,4 @@
-# Hospital Management System Sql Project
+# Hospital Management System Data Analysis using SQL
 
 ![](https://github.com/ab21bisht/Hospital_Management_System_sql_project/blob/main/img%202.jpg)
 
