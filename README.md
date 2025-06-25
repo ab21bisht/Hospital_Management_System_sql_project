@@ -7,7 +7,8 @@
 ### 1. Write a query to count the number of appointments for each status (e.g., Scheduled, Completed, No-show, Cancelled).
 ```sql
 select 
-	status,count(status)
+	status,
+	count(status)
 from 
 	appointments
 group by 1;
@@ -16,7 +17,8 @@ group by 1;
 ### 2. Write a query to find patients who have more than one appointment scheduled.
 ```sql
 select 
-	patient_id, count(*) as appointment_count
+	patient_id,
+	count(*) as appointment_count
 from 
 	appointments
 group by 1
@@ -26,7 +28,8 @@ having count(*) >1;
 ### 3. Write a query to calculate the total billing amount grouped by payment status (e.g., Paid, Pending, Failed).
 ```sql
 select 
-	payment_status,sum(amount) 
+	payment_status,
+	sum(amount) 
 from 
 	billing
 group by 1;
@@ -49,7 +52,8 @@ WHERE
 ### 5. Write a query to calculate the average treatment cost for each type of treatment.
 ```sql
 select 
-	treatment_type, round(avg(cost),0) as average_cost
+	treatment_type,
+	round(avg(cost),0) as average_cost
 from 
 	treatments
 group by 1;
@@ -58,7 +62,8 @@ group by 1;
 ### 6. Write a query to list all patients who have had emergency appointments, including their names and appointment dates.
 ```sql
 select 
-	concat(p.first_name,' ',p.last_name) as full_name, appointment_date
+	concat(p.first_name,' ',p.last_name) as full_name,
+	appointment_date
 from 
 	patients as p
 join 
@@ -72,7 +77,8 @@ where
 ### 7. Write a query to find the most common reason for visits in the `appointments` table.
 ```sql
 select 
-	reason_for_visit, count(reason_for_visit) 
+	reason_for_visit,
+	count(reason_for_visit) 
 from 
 	appointments
 group by 1
@@ -112,7 +118,8 @@ WHERE
 ### 10. Write a query to list all patients along with their insurance providers.
 ```sql
 select 
-	insurance_provider,count(insurance_provider)
+	insurance_provider,
+	count(insurance_provider)
 from 
 	patients
 group by 1;
